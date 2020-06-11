@@ -1,0 +1,11 @@
+[02-Jun-2020 19:17:52 UTC] Astra: db version updated successfully!
+[08-Jun-2020 17:37:54 UTC] PHP Fatal error:  Uncaught Error: Class 'ActionScheduler_Lock' not found in /home/customer/www/overstoryalliance.org/public_html/wp-content/plugins/wpforms-lite/vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler.php:29
+Stack trace:
+#0 /home/customer/www/overstoryalliance.org/public_html/wp-content/plugins/wpforms-lite/vendor/woocommerce/action-scheduler/classes/ActionScheduler_QueueRunner.php(103): ActionScheduler::lock()
+#1 /home/customer/www/overstoryalliance.org/public_html/wp-includes/class-wp-hook.php(287): ActionScheduler_QueueRunner->maybe_dispatch_async_request('')
+#2 /home/customer/www/overstoryalliance.org/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#3 /home/customer/www/overstoryalliance.org/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#4 /home/customer/www/overstoryalliance.org/public_html/wp-includes/load.php(960): do_action('shutdown')
+#5 [internal function]: shutdown_action_hook()
+#6 {main}
+  thrown in /home/customer/www/overstoryalliance.org/public_html/wp-content/plugins/wpforms-lite/vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler.php on line 29
